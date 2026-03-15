@@ -73,31 +73,31 @@ Under `Network Connections`, we renamed the NAT adapter to `Internet` and the in
 
 In `Server Manager`, we began by launching the `Add Roles and Features` to install `Active Directory Domain Services` (AD DS).
 
-<img width="1001" height="741" src="https://i.imgur.com/Z8jDlwo.png"/></br>
-<img width="1001" height="741" src="https://i.imgur.com/Q1HU6UM.png"/></br>
+<img width="755" height="455" src="https://i.imgur.com/Z8jDlwo.png"/></br>
+<img width="755" height="455" src="https://i.imgur.com/Q1HU6UM.png"/></br>
 
 During the setup, we also included `Group Policy Management` and `Remote Server Administration Tools` (RSAT) to enable centralized domain control and administrative functionality.
 
-<img width="1001" height="741" src="https://i.imgur.com/t5C1nm4.png"/></br>
+<img width="755" height="455" src="https://i.imgur.com/t5C1nm4.png"/></br>
 
-<img width="783" height="556" src="https://i.imgur.com/eRbGgNw.png " /></br>
+<img width="755" height="455" src="https://i.imgur.com/eRbGgNw.png " /></br>
 
 After completing the role installation, we proceeded with the `post-deployment configuration` by promoting the server to a domain controller.
 
-<img width="1227" height="764" src="https://i.imgur.com/AM08nbA.png " /></br>
+<img width="755" height="455" src="https://i.imgur.com/AM08nbA.png " /></br>
 
 During the configuration, we created a new forest with the root domain name `mydomain.com`.
 
-<img width="1227" height="764" src="https://i.imgur.com/WD03RKf.png " /></br>
+<img width="755" height="455" src="https://i.imgur.com/WD03RKf.png " /></br>
 
 
 Enabled both the `Domain Name System` (DNS) server and `Global Catalog` (GC) options. 
 
-<img width="1227" height="764" src="https://i.imgur.com/fUF0Sbe.png " /></br>
+<img width="755" height="455" src="https://i.imgur.com/fUF0Sbe.png " /></br>
 
 We also set the NetBIOS domain name to `MYDOMAIN`.
 
-<img width="1227" height="764" src="https://i.imgur.com/ezYA1Zj.png " /></br>
+<img width="755" height="455" src="https://i.imgur.com/ezYA1Zj.png " /></br>
 
 ---
 
@@ -105,7 +105,7 @@ We also set the NetBIOS domain name to `MYDOMAIN`.
 
 After logging back into the server, we navigated to `Active Directory Users and Computers` to begin configuring domain objects.
 
-<img width="1225" height="763" src="https://i.imgur.com/TUIDmlV.png" /></br>
+<img width="755" height="455" src="https://i.imgur.com/TUIDmlV.png" /></br>
 
 
 We created a new `Organizational Unit` (OU) named `_ADMINS`, and within that OU, added a new user account with the full name `Bilal Dumu` and the user logon name `a-bdumu`.
@@ -114,7 +114,7 @@ We created a new `Organizational Unit` (OU) named `_ADMINS`, and within that OU,
 
 Within `Bilal Dumu’` account properties in `Active Directory Users and Computers`, we navigated to the `Member Of` tab and added the user to the `Domain Admins` group. This granted him administrative privileges across the domain. 
 
-<img width="1225" height="763" src="https://i.imgur.com/IWinUZc.png" /></br>
+<img width="755" height="455" src="https://i.imgur.com/IWinUZc.png" /></br>
 
 ---
 
